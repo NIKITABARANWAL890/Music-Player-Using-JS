@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="toggle-mode" onclick="toggleSwitch(this)">
+            <div class="toggle-knob"></div>
+        </div>
+        <h1 style="text-align: center; padding: 1rem;">Music Player</h1>
+        <div class="music-container">
+            <div class="music-left-div">
+                <label for="genre">
+                    Filter by Genre:
+                    <select name="genre" id="genre" onchange="handleSelect(event)">
+                        <!-- <option value="all">All</option>
+                        <option value="all">All</option>
+                        <option value="all">All</option> -->
+                    </select>
+                </label>
+                <h2>All Songs</h2>
+                <ul class="all-songs">
+                    <!-- <li>Shape Of You- Ed Sheeran</li>
+                    <li>Shape Of You- Ed Sheeran</li>
+                    <li>Shape Of You- Ed Sheeran</li>
+                    <li>Shape Of You- Ed Sheeran</li> -->
+                </ul>
+            </div>
+            <div class="music-center-div">
+                <div class="music-card">
+                    <img src="https://i.ytimg.com/vi/VlvkNmSbwOc/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBz7RfXSPVNNBOEJbynu9VC4b5LGg" alt="">
+                    <h2>Shape of you</h2>
+                    <p>Ed Sheeran</p>
+                </div>
+                <div class="music-duration-display">
+                    <i class="ri-play-fill"></i>
+                    <div class="music-duration-cover">
+                        0:00/4:23
+                    </div>
+                    <div class="distance-covered"></div>
+                    <i class="ri-volume-up-fill"></i>
+                    <i class="ri-more-2-fill"></i>
+                </div>
+            </div>
+            <div class="music-right-div">
+                <div class="input-songs">
+                    <input type="text">
+                    <button>Create Playlist</button>
+                </div>
+                <div class="display-plalists">
+                    <ul class="current-playlists">
+                        <h2>Current Playlist</h2>
+                        <li class="current-playlist">Playlist</li>
+                    </div>
+                    <ul class="all-playlists">
+                        <h2>All Playlists</h2>
+                        <li class="all-playlist">Playlist</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

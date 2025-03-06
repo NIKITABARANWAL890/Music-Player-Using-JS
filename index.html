@@ -38,28 +38,30 @@
                     <p>Ed Sheeran</p>
                 </div>
                 <div class="music-duration-display">
-                    <i class="ri-play-fill"></i>
+                    <i class="ri-play-fill" id="play-and-pause-btn"></i>
                     <div class="music-duration-cover">
-                        0:00/4:23
+                        <span id="covered-minute">0</span>:<span id="covered-seconds">00</span>/4:23
                     </div>
-                    <div class="distance-covered"></div>
+                    <div class="distance-covered">
+                        <div class="distance-knob"></div>
+                    </div>
                     <i class="ri-volume-up-fill"></i>
                     <i class="ri-more-2-fill"></i>
                 </div>
             </div>
             <div class="music-right-div">
                 <div class="input-songs">
-                    <input type="text">
-                    <button>Create Playlist</button>
+                    <input type="text" class="input-new-playlist">
+                    <button id="create-playlist-btn">Create Playlist</button>
                 </div>
                 <div class="display-plalists">
+                    <h2 id="current-playlist-header">Current Playlist</h2>
                     <ul class="current-playlists">
-                        <h2>Current Playlist</h2>
-                        <li class="current-playlist">Playlist</li>
-                    </div>
+                        <!-- <li class="current-playlist">Playlist</li> -->
+                    </ul>
+                    <h2>All Playlists</h2>
                     <ul class="all-playlists">
-                        <h2>All Playlists</h2>
-                        <li class="all-playlist">Playlist</li>
+                        <!-- <li class="all-playlist">Playlist</li> -->
                     </ul>
                 </div>
             </div>

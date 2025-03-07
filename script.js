@@ -316,8 +316,9 @@ function playNpauseFunc(id, element) {
                 const duration = song.duration;
                 if (currentCount > song.duration) {
                     console.log("Song completed, stopping progress.");
+                    localStorage.setItem("secondsCount", JSON.stringify(0));
                     clearInterval(intervalMap.get(id)); // Stop interval
-                    intervalMap.delete(id);
+                    // intervalMap.delete(id);
                     return;
                 }
 
